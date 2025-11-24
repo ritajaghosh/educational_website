@@ -104,3 +104,30 @@ body{
 .hero-btn:hover{
     transform: scale(1.1);
 }
+.teacher-card {
+    background: #fff;
+    width: 290px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    float: left;
+}
+.teachers-section {
+    padding: 60px 5%;
+    background: #f4f7ff;
+    text-align: center;
+}
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+}
+.teacher-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
