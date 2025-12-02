@@ -18,12 +18,16 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    backdrop-filter:blur(30px);
+    box-shadow: 0px 0px 0px rgba(227,228,237,0.37);
+    border: 2px solid rgba(255,255,255,0.18);
+    
 }
 
 .navbar .logo{
     font-size: 22px;
     font-weight: bold;
-    color: #a2d6ff;
+    
 }
 
 .navbar ul{
@@ -36,10 +40,12 @@ body{
     cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
+    color: #e3ebf3;
+    
 }
 
 .navbar ul li:hover{
-    color: #7cc2ff;
+    color: #e3ebf3;
 }
 
 /* Hero Section */
@@ -48,6 +54,8 @@ body{
     width: 100%;
     background: url("assets/coverpic.jpg") no-repeat center center/cover;
     position: relative;
+    background-attachment: fixed;
+
 }
 
 /* Dark overlay */
@@ -55,7 +63,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
     height: 100%;
     background: rgba(0,0,0,0.6);
 }
@@ -169,4 +177,106 @@ body{
 .teacher-card p {
     font-size: 14px;
     opacity: 0.8;
-}   
+}
+.span-card{
+    background: #5f3bff;
+    padding: 20px;
+    text-align: center;
+
+
+
+}  
+.registration-section {
+padding: 60px 20px;
+background-image:url(assets/form_bg.jpeg);
+text-align: center;
+animation: fadeIn 1s ease forwards;
+backdrop-filter: blur(10px);
+
+}
+
+.registration-container {
+max-width: 500px;
+margin: 0 auto;
+backdrop-filter: blur(10px); /* This is the key property! */
+ -webkit-backdrop-filter: blur(10px);
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0px 0px 0px cyan;
+transform: translateY(20px);
+opacity: 0;
+animation: slideUp 1s ease forwards 0.5s;
+}
+
+.registration-logo {
+width: 120px;
+margin-bottom: 20px;
+animation: fadeIn 1s ease forwards;
+
+}
+
+.welcome-text {
+font-size: 28px;
+color: #007bff;
+margin-bottom: 20px;
+animation: fadeIn 1.5s ease forwards;
+}
+
+.registration-container h2 {
+margin-bottom: 15px;
+color: #333;
+}
+
+.registration-container p {
+margin-bottom: 25px;
+color: #555;
+
+}
+
+.registration-form label {
+display: block;
+text-align: left;
+margin-bottom: 5px;
+font-weight: bold;
+animation: fadeIn 1s ease forwards;
+}
+
+.registration-form input,
+.registration-form select {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 5px;
+border: 1px solid #ccc;
+animation: fadeIn 1s ease forwards;
+}
+
+.registration-form button {
+padding: 12px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+animation: fadeIn 1s ease forwards;
+}
+
+.registration-form button:hover {
+background-color: #0056b3;
+
+}
+
+/* Animations */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@keyframes slideUp {
+from { transform: translateY(20px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+.registration-logo img{
+    background: transparent;
+}
+
